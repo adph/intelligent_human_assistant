@@ -1,0 +1,34 @@
+{
+  "browser_close_last_tab": {
+    "x": 1375,
+    "y": 56
+  },
+  "browser_address_bar": {
+    "x": 576,
+    "y": 99
+  },
+  "browser_new_tab": {
+    "x": 861,
+    "y": 104
+  },
+  "openwebui_chat_input": {
+    "x": 787,
+    "y": 824
+  },
+  "mac_close_window_red": {
+    "x": 18,
+    "y": 53
+  },
+  "openwebui_new_chat": {
+    "x": 82,
+    "y": 222
+  },
+  "chrome_new_tab": {
+    "x": 1414,
+    "y": 60
+  },
+  "address_bar": {
+    "x": 872,
+    "y": 820
+  }
+}
