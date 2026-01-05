@@ -1,8 +1,7 @@
-# Retrieval & Automation Platform (P5)
+# Intelligent Human Assistant — LLM Tooling & Automation 
 
 An **Open WebUI**-hosted assistant that answers questions over your documents (RAG + OCR) **with citations** and can **take actions** by calling **MCP (FastMCP) tools** (e.g., run terminal commands or automate UI click/type steps).
 
-> P5 is the final, end-to-end “knowledge → answer → action” deliverable. Earlier phases (P1–P4) informed design decisions and are not required to run this repo.
 
 ---
 
@@ -17,22 +16,6 @@ An **Open WebUI**-hosted assistant that answers questions over your documents (R
 
 ---
 
-## Architecture (high level)
-
-```mermaid
-flowchart LR
-  U[User in Open WebUI] -->|chat| A[LLM]
-  A -->|retrieve| R[RAG Index / KB]
-  R -->|snippets + citations| A
-  A -->|tool call| M[MCP (FastMCP) Tool Router]
-  M --> T1[Terminal Tool: execute_command]
-  M --> T2[UI Tool: ui_click / ui_type]
-  T1 --> S[(Local system / sandbox)]
-  T2 --> G[(Desktop / Browser UI)]
-  O[OCR Pipeline] --> R
-```
-
----
 
 ## Tech stack
 
@@ -176,18 +159,4 @@ Because this project can run commands and click/type on your machine:
 - Add evaluation harness for retrieval quality (precision@k, citation faithfulness)
 - Package as a single `docker compose` stack (Open WebUI + tool servers + vector DB)
 
----
-
-## License
-
-Choose a license before publishing (MIT/Apache-2.0 are common for portfolios).
-
----
-
-## Demo (optional)
-
-Add a short GIF or screenshots here:
-
-- `docs/demo.gif`
-- `docs/architecture.png`
 
